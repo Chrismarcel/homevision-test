@@ -1,0 +1,31 @@
+{
+  "name": "homevision-test",
+  "version": "1.0.0",
+  "description": "A simple webapp that displays an infinite scrolling of some houses data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src/__tests__ --coverage --no-cache -u --forceExit",
+    "watch": "parcel src/index.html -d dist",
+    "build": "parcel build src/index/index.html -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrismarcel/homevision-test.git"
+  },
+  "author": "Chrismarcel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chrismarcel/homevision-test/issues"
+  },
+  "homepage": "https://github.com/Chrismarcel/homevision-test#readme",
+  "dependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "jest": "^26.2.2",
+    "parcel-bundler": "^1.12.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2"
+  }
+}
