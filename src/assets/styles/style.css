@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+  background: url('../images/homeview-hero.jpg');
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 120px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-header-lg {
+  font-size: 8rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.hero-header-sm {
+  font-size: 3rem;
+  font-family: inherit;
+  max-width: 400px;
+  font-weight: 600px;
+}
+
+.listing {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 330px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.card-wrapper {
+  max-width: 330px;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  border-radius: 5px;
+}
+
+.card .image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+.card .image-wrapper:hover .image {
+  transform: scale(1.2);
+  transition: transform 400ms ease-in;
+}
+
+.card .image {
+  transition: transform 400ms ease-out;
+}
+
+.home-details {
+  padding: 15px;
+  color: #212529;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.homeowner,
+.price {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.homeowner {
+  font-size: 2rem;
+}
+
+.address {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.price {
+  color: #5c68f3;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.error-message-wrapper {
+  padding: 100px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.error-message {
+  font-size: 2.5rem;
+  color: #ff0033;
+}
+
+.refresh-list {
+  font-family: inherit;
+  font-size: 1.5rem;
+  min-width: 150px;
+  min-height: 48px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: #5c68f3;
+  color: #ffffff;
+}
