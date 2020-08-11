@@ -1,8 +1,16 @@
 module.exports = {
   coverageDirectory: 'coverage',
   setupFiles: ['<rootDir>/enzyme.config.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/tests/', '/src/__tests__/assetsTransformer.js'],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/src/App.js',
+    '/tests/',
+    '/src/__tests__/assetsTransformer.js',
+  ],
   transformIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/assets/img'],
+  moduleNameMapper: {
+    '\\.(css)$': 'identity-obj-proxy',
+  },
   collectCoverageFrom: [
     '**/*.{js,jsx}',
     '!**/node_modules/**',
@@ -11,14 +19,14 @@ module.exports = {
     '!**/tests/**',
     '!**/__tests__/**',
     '!**/index.js',
-    '!**/dist/**'
+    '!**/dist/**',
   ],
   coverageThreshold: {
     global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80
-    }
-  }
-};
+      branches: 60,
+      functions: 60,
+      lines: 60,
+      statements: 60,
+    },
+  },
+}

@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/Chrismarcel/homevision-test#readme",
   "dependencies": {
+    "@babel/preset-react": "^7.10.4",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.3",
+    "intersection-observer": "^0.11.0",
     "jest": "^26.2.2",
     "parcel-bundler": "^1.12.4",
     "prop-types": "^15.7.2",
@@ -30,11 +32,15 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^2.5.1"
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "identity-obj-proxy": "^3.0.0"
   }
 }
