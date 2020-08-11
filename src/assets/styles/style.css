@@ -40,12 +40,16 @@ body {
   font-weight: 600px;
 }
 
-.listing {
+.container {
   padding: 100px 50px;
+}
+
+.listing {
   display: grid;
   grid-template-columns: repeat(4, 330px);
   grid-gap: 30px;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .card-wrapper {
@@ -56,6 +60,7 @@ body {
   width: 100%;
   box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   border-radius: 5px;
+  min-height: 400px;
 }
 
 .card .image-wrapper {
@@ -89,6 +94,7 @@ body {
 
 .homeowner {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .address {
@@ -102,17 +108,16 @@ body {
   color: #5c68f3;
   font-size: 1.8rem;
   margin-top: 20px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .error-message-wrapper {
-  padding: 100px;
   text-align: center;
   font-family: inherit;
 }
 
 .error-message {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ff0033;
 }
 
@@ -125,4 +130,41 @@ body {
   margin-top: 20px;
   background: #5c68f3;
   color: #ffffff;
+}
+
+.content-loader .image-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.content-loader .image-placeholder,
+.content-loader span {
+  background: rgba(129, 145, 152, 50%);
+  display: block;
+  animation-name: shimmerEffect;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.content-loader .homeowner {
+  height: 27px;
+}
+
+.content-loader .address {
+  height: 18px;
+}
+
+.content-loader .price {
+  height: 24px;
+}
+
+@keyframes shimmerEffect {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
 }
