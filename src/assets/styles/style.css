@@ -37,7 +37,7 @@ body {
   font-size: 3rem;
   font-family: inherit;
   max-width: 400px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .container {
@@ -213,4 +213,54 @@ body {
   position: absolute;
   left: 105px;
   top: 15px;
+}
+
+@media screen and (max-width: 1450px) {
+  .listing {
+    grid-template-columns: repeat(3, 330px);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .listing {
+    grid-template-columns: repeat(2, 330px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero-header-lg {
+    font-size: 5rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-header-sm {
+    font-size: 2.5rem;
+  }
+
+  .listing {
+    display: initial;
+  }
+
+  .card-wrapper {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .card .image {
+    width: 100%;
+  }
 }
